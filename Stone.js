@@ -14,10 +14,15 @@ class Stone {
       World.add(world, this.body);
     }
     display(){
-        push();
-        translate(this.body.position.x, this.body.position.y);
-        imageMode(CENTER);
-        image(this.image, 0, 0, this.r,this.r);
-        pop();
+      var stonePos=this.body.position;		
+			push()
+			translate(stonePos.x, stonePos.y);
+			// rectMode(CENTER)
+			// rotate(this.body.angle)
+			fill(255,0,255)
+			imageMode(CENTER);
+			ellipseMode(RADIUS)
+			image(this.image, 0,0,this.r*2, this.r*2)
+			pop()
     }
   };

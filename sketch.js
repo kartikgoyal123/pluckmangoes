@@ -18,22 +18,22 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	stoneObj=new Stone(130,230,50); 
+	stoneObj=new Stone(130,230,30); 
 
-	mango1=new Mango(700,100,30);
-  mango2=new Mango(700,130,30);
-	mango3=new Mango(750,140,30);
-	mango4=new Mango(750,150,30);
-	mango5=new Mango(800,80,30);
-	mango6=new Mango(800,60,30);
-	mango7=new Mango(850,130,40);
-	mango8=new Mango(850,150,40);
-	mango9=new Mango(900,140,40);
-	mango10=new Mango(900,90,40);
-	mango11=new Mango(830,50,40);
-  mango12=new Mango(830,160,40);
+	mango1=new Mango(700,100,20);
+  mango2=new Mango(700,130,20);
+	mango3=new Mango(750,140,20);
+	mango4=new Mango(750,150,20);
+	mango5=new Mango(800,80,20);
+	mango6=new Mango(800,60,20);
+	mango7=new Mango(850,130,20);
+	mango8=new Mango(850,150,20);
+	mango9=new Mango(900,140,20);
+	mango10=new Mango(900,90,20);
+	mango11=new Mango(830,50,20);
+  mango12=new Mango(830,160,20);
 
-	treeObj=new Tree(800,200,350,400);
+	treeObj=new Tree(800,390,200,250);
 	groundObject=new Ground(600,height,1200,20);
 	launcherObject=new Launcher(stoneObj.body,{x:130, y:230})
   var render = Render.create({

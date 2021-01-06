@@ -16,11 +16,12 @@ class Mango {
   display()
   {
           
-          var mangopos=this.body.position;		
+          var mangoPos=this.body.position;		
           push()
-          translate(mangopos.x, mangopos.y);
+          translate(mangoPos.x, mangoPos.y);
           imageMode(CENTER);
-          image(this.image, 0,0,this.r, this.r)
+          ellipseMode(CENTER);
+          image(this.image, 0,0,this.r*2, this.r*2)
           pop()
           
   }
